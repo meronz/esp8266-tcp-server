@@ -1,6 +1,13 @@
 #!/bin/bash
+# Preconfigured for Olimex boards
 
-# true per configurare
+boot=none
+app=0
+spi_speed=80
+spi_mode=QIO
+spi_size=2048
+
+# Set true for interactivity
 if false; then
 echo "Please follow below steps(1-5) to generate specific bin(s):"
 echo "STEP 1: choose boot version(0=boot_v1.1, 1=boot_v1.2+, 2=none)"
@@ -120,11 +127,6 @@ echo "spi size: $spi_size KB"
 echo ""
 
 fi
-boot=none
-app=0
-spi_speed=80
-spi_mode=QIO
-spi_size=2048
 
 echo ""
 echo "start..."
